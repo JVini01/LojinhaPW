@@ -39,7 +39,7 @@ qtdEstoque int not null,
 descricaoAlbum text not null,
 lancamentoAlbum enum ('S','N') not null,
 
-constraint fk_AlbumCategoria foreign key(AlbumCategoria) references tblCategoria(AlbumCategoria),
+constraint fk_AlbumCategoria foreign key(albumCategoria) references tblCategoria(albumCategoria),
 constraint fk_grupoAlbum foreign key(grupoCategoria) references tblCategoria(grupoCategoria)
 );
 -- selects do video 13
